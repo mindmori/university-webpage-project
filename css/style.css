@@ -69,7 +69,7 @@ header {
 .banner {
   width: 1400px;
   height: 758px;
-  background-image: url(/img/section1.png);
+  background-image: url(../img/section1.png);
 }
 
 .banner div {
