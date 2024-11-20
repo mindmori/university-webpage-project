@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion E-commerce</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,9 +24,9 @@
             <div class="logo">EVERLANE</div>
             <nav class="right-nav">
                 <ul>
-                    <li><img src="img/glass.png" alt=""></li>
-                    <li><img src="img/user.png" alt=""></li>
-                    <li><img src="img/cart.png" alt=""></li>
+                    <li><img src="/img/glass.png" alt=""></li>
+                    <li><img src="/img/user.png" alt=""></li>
+                    <li><img src="/img/cart.png" alt=""></li>
                 </ul>
             </nav>
         </section>
@@ -41,6 +44,19 @@
             </ul>
         </section>
     </header>
+
+    <section>
+        <form>
+            <input type="email" id="email" name="email" required 
+            title="Введите действующий email в формате example@domain.com"
+            placeholder="example@domain.com"> 
+            <input type="password" id="password" name="password" required 
+            pattern="[A-Za-z]{,5}"
+            title="Пароль должен содержать только буквы."
+            placeholder="Введите ваш пароль">
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
 
     <section class="banner">
         <div>
