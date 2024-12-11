@@ -10,6 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="preloader">
+        <img class="preloader_image" src="/img/loading.gif">
+    </div>
+
+    <script>
+        window.onload = function () {
+  console.log("Загрузка завершена"); // Для проверки загрузки
+  document.body.classList.add('loaded_hiding');
+  console.log("Класс loaded_hiding добавлен");
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+    console.log("Класс loaded добавлен, loaded_hiding удалён");
+  }, 500);
+};
+
+    </script>
 
     <header>
         <section class="top-header">
